@@ -10,7 +10,7 @@ def plot_missing_value(df):
         return
 
     plt.Figure(figsize=(10, 6))
-    sns.barplot(x=missing_counts.index, y=missing_counts.values)
+    sns.barplot(x=missing_counts.index, y=missing_counts.values, palette='Set2')
     plt.title("Missing values per column")
     plt.ylabel("Number of missing value")
     plt.xlabel("Columns")
